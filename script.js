@@ -117,6 +117,7 @@ progressBar.addEventListener("click", changeProgressBar);
 
 
 
+loadItems();
 
 
 async function loadItems() {
@@ -145,7 +146,7 @@ async function loadItems() {
         genre: "Pop",
     }];
 
-    const tracks =["A Bar Song","Die with a smile","Birds of a feather","Lose control","Espresso"];
+    
     
     // let res = await fetch("https://theaudiodb.com/api/v1/json/2/track.php?m=2115888");
     // let items = await res.json();
@@ -155,7 +156,7 @@ async function loadItems() {
             <table>
       <tr>
         <th>Song</th>
-        <th>Artist/Band</th>
+        <th>Artist</th>
         <th>Genre</th>
       </tr>
       <tr>
@@ -174,7 +175,38 @@ async function loadItems() {
     console.log(body);
 
     document.getElementById("fav-music").innerHTML=body;
-    
-}
 
-loadItems();
+} 
+
+
+    
+//         var ctx = document.getElementById('myChart').getContext('2d');
+//         var chart = new Chart(ctx, {
+//             type: 'pie',
+    
+//             data: {
+//                 labels: [
+//                     'Red',
+//                     'Yellow',
+//                     'Blue'
+//                 ] ,
+//                 datasets: [{
+//                     label: "My Chart",
+//                     data:[300,50,100] ,
+//                     backgroundColor:[
+//                         'rgb(255, 99, 132)',
+//                         'rgb(54, 162, 235)',
+//                         'rgb(255, 205, 86)'
+//                     ] ,
+//                    hoverOffset:4
+//                 }]
+//             },
+    
+//         });
+    
+    
+// }
+
+
+
+
