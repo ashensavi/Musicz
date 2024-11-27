@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
 
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(106,121,9,1) 21%, rgba(0,212,255,1) 100%); 
+}
 .navbar-brand{
     font-family: "Bungee Spice", sans-serif;
     font-weight:800;
