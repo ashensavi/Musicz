@@ -150,10 +150,12 @@ async function loadItems() {
     
     // let res = await fetch("https://theaudiodb.com/api/v1/json/2/track.php?m=2115888");
     // let items = await res.json();
+
+
     let body = "";
        for(i=0;i<songList.length;i++){
         body+=`
-            <table>
+            <table class="bg-warning">
       <tr>
         <th>Song</th>
         <th>Artist</th>

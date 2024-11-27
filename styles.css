@@ -45,6 +45,13 @@ th, td {
     margin-top: 10%;
   }
 
+  .fav-tracks{
+    margin-top:20%;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+  }
+
 
   #background {
     object-fit: cover;
