@@ -7,11 +7,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head> 
-<body> 
+<body class="bg-black"> 
     <nav><!-- Navigation -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-info">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">MUSICZ</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -21,20 +21,19 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Categories</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Artists</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
+                 
                 </ul>
               </div>
             </div>
           </nav>
     </nav> 
   
+    <div class="container">
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -43,24 +42,22 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="" class="d-block w-100" alt="...">
+          <img src="img/pop_music.jpg" height="500px" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+        
+           
           </div>
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
+          <img src="img/rock_music.jpg" height="500px" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+        
           </div>
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
+          <img src="img/music.jpg" height="500px" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+     
           </div>
         </div>
       </div>
@@ -73,12 +70,117 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </div>
+
+
+  <div class="container">
+  <div class="outer-container">
+    <img src="https://i.ibb.co/7RhfRBZ/Fine-Line-Harry-Styles.jpg" alt="Harry Styles' Fine Line album cover" id="background" />
+    <audio src="https://res.cloudinary.com/cbanlawi/video/upload/v1614140796/HarryStyles-WatermelonSugar_f5471p.mp3" id="track"></audio>
+  </div>
+  
+  <div class="player-container">
+    <img src="https://i.ibb.co/7RhfRBZ/Fine-Line-Harry-Styles.jpg" alt="Harry Styles' Fine Line album cover" id="thumbnail" />
+  
+    <div class="box">
+      <div class="play-pause">
+        <i class="far fa-play-circle fa-3x" id="play"></i>
+        <i class="far fa-pause-circle fa-3x" id="pause"></i>
+      </div>
+      <div class="track-info">
+        <div id="track-artist">Harry Styles</div>
+        <div id="track-title">Watermelon Sugar</div>
+      </div>
+      <div class="next-prev">
+        <i class="far fa-arrow-alt-circle-left fa-2x" id="prev-track">ff</i>
+        <i class="far fa-arrow-alt-circle-right fa-2x" id="next-track">vv</i>
+      </div>
+      <div class="progress-bar">
+        <input type="range" id="progressBar" min="0" max="" value="0" />
+      </div>
+      <div class="track-time">
+        <div id="currentTime"></div>
+        <div id="durationTime"></div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+  <div class="card-container text-center">
+    <div class="row">
+      <div class="col mb-5">
+        <div class="card-upper" style="width: 30rem;">
+          <a href="https://www.musicgenreslist.com/">
+          <img src="img/card-1.jpg" class="card-img-top" alt="...">
+        </a>
+          <div class="card-body bg-black">
+            <h1 class="card-text">POP MUSIC</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-upper" style="width: 30rem;">
+          <a href="https://www.musicgenreslist.com/">
+          <img src="img/card-2.jpg" class="card-img-top" alt="...">
+        </a>
+          <div class="card-body bg-black">
+            <h1 class="card-text">ROCK MUSIC</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-upper" style="width: 30rem;">
+          <a href="https://www.musicgenreslist.com/">
+          <img src="img/card-3.jpg" class="card-img-top" alt="...">
+        </a>
+          <div class="card-body bg-black">
+            <h1 class="card-text">R&B MUSIC</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+          <a href="https://www.musicgenreslist.com/">
+          <img src="img/card-4.jpeg" class="card-img-top" alt="...">
+        </a>
+          <div class="card-body bg-black">
+            <h1 class="card-text">REGGAE MUSIC</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+          <a href="https://www.musicgenreslist.com/">
+          <img src="img/card-5.jpeg" class="card-img-top" alt="...">
+        </a>
+          <div class="card-body bg-black">
+            <h1 class="card-text">LATIN MUSIC</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+          <a href="https://www.musicgenreslist.com/">
+          <img src="img/card-6.jpeg" class="card-img-top" alt="...">
+        </a>
+          <div class="card-body bg-black">
+            <h1 class="card-text">COUNTRY MUSIC</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fav-music-container" id="fav-music">
+   
+  </div>
              
              
             
      
     <script src="script.js"></script> 
-    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/86f6ed8cfa.js" crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body> 
 </html>
